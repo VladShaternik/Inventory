@@ -1,0 +1,35 @@
+<resources>
+    <!-- Name for the application -->
+    <string name="app_name">Inventory App</string>
+
+    <!-- Labels for overflow menu -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_delete_all_entries">Delete All Items</string>
+    <string name="editor_delete_successful">Item deleted</string>
+    <string name="editor_delete_failed">Error with deleting item</string>
+    <string name="editor_activity_title_new_item">Add an item</string>
+    <string name="editor_activity_title_edit_item">Edit item</string>
+    <string name="editor_insert_item_successful">Item saved</string>
+    <string name="editor_insert_item_failed">Error with saving item</string>
+    <string name="editor_update_item_successful">Item updated</string>
+    <string name="editor_update_item_failed">Error with updating item</string>
+    <string name="editor_insert_item_error_fill_all">Please fill all fields</string>
+    <string name="empty_view_title_text">It\'s a bit lonely here…</string>
+    <string name="empty_view_subtitle_text">Get started by adding an item</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="delete_dialog_msg">Delete this item?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Text Editor hints -->
+    <string name="product_name_hint">Product Name</string>
+    <string name="price_hint">Price</string>
+    <string name="quantity_hint">Quantity</string>
+    <string name="supplier_name_hint">Supplier Name</string>
+    <string name="supplier_phone_hint">Supplier Phone Number</string>
+
+</resources>
