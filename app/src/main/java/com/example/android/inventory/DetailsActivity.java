@@ -38,6 +38,7 @@ public class DetailsActivity extends AppCompatActivity implements LoaderManager.
     private TextView supplierPhoneTextView;
     private int currentQuantity;
     private String currentSupplierPhone;
+    private int currentId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,6 +118,15 @@ public class DetailsActivity extends AppCompatActivity implements LoaderManager.
             case R.id.action_delete:
                 showDeleteConfirmationDialog();
                 return true;
+            case R.id.action_edit:
+                Intent intent = new Intent(DetailsActivity.this, EditorActivity.class);
+
+                Uri currentUri = ContentUris.withAppendedId(InventoryEntry.CONTENT_URI, currentId);
+
+                intent.setData(currentUri);
+
+                startActivity(intent);
+                return true;
             case android.R.id.home:
                 NavUtils.navigateUpFromSameTask(DetailsActivity.this);
                 return true;
@@ -145,6 +155,7 @@ public class DetailsActivity extends AppCompatActivity implements LoaderManager.
             int quantityColumnIndex = cursor.getColumnIndex(InventoryEntry.COLUMN_QUANTITY);
             int supplierNameColumnIndex = cursor.getColumnIndex(InventoryEntry.COLUMN_SUPPLIER_NAME);
             int supplierPhoneColumnIndex = cursor.getColumnIndex(InventoryEntry.COLUMN_SUPPLIER_PHONE);
+            int idColumnIndex = cursor.getColumnIndex(InventoryEntry._ID);
 
             String productName = cursor.getString(productNameColumnIndex);
             int price = cursor.getInt(priceColumnIndex);
@@ -153,6 +164,8 @@ public class DetailsActivity extends AppCompatActivity implements LoaderManager.
             String supplierName = cursor.getString(supplierNameColumnIndex);
             String supplierPhone = cursor.getString(supplierPhoneColumnIndex);
             currentSupplierPhone = supplierPhone;
+            int id = cursor.getInt(idColumnIndex);
+            currentId = id;
 
             productNameTextView.setText("Item name: " + productName);
             priceTextView.setText("$" + String.valueOf(((float)price / 100)));

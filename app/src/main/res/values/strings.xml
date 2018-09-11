@@ -5,7 +5,8 @@
     <!-- Labels for overflow menu -->
     <string name="action_insert_dummy_data">Insert Dummy Data</string>
     <string name="action_save">Save</string>
-    <string name="action_delete">Delete</string>
+    <string name="action_delete">Delete</string>action_edit
+    <string name="action_edit">Edit</string>
     <string name="action_delete_all_entries">Delete All Items</string>
     <string name="editor_delete_successful">Item deleted</string>
     <string name="editor_delete_failed">Error with deleting item</string>
