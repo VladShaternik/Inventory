@@ -11,6 +11,7 @@
     <string name="editor_delete_failed">Error with deleting item</string>
     <string name="editor_activity_title_new_item">Add an item</string>
     <string name="editor_activity_title_edit_item">Edit item</string>
+    <string name="details_activity_title">Item Description</string>
     <string name="editor_insert_item_successful">Item saved</string>
     <string name="editor_insert_item_failed">Error with saving item</string>
     <string name="editor_update_item_successful">Item updated</string>

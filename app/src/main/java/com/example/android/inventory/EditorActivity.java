@@ -244,7 +244,6 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             int price = cursor.getInt(priceColumnIndex);
             int quantity = cursor.getInt(quantityColumnIndex);
             String supplierName = cursor.getString(supplierNameColumnIndex);
-            ;
             String supplierPhone = cursor.getString(supplierPhoneColumnIndex);
 
             productNameEditText.setText(productName);

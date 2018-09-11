@@ -43,7 +43,7 @@ public class InventoryCursorAdapter extends CursorAdapter {
         final int id = cursor.getInt(idColumnIndex);
 
         productNameTextView.setText(productName);
-        priceTextView.setText("$" + String.valueOf(price));
+        priceTextView.setText("$" + String.valueOf((float)price / 100));
         quantityTextView.setText("Quantity: " + String.valueOf(quantity));
 
         Button saleButton = view.findViewById(R.id.sale_button);

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".DetailsActivity">
+
+    <TextView
+        android:id="@+id/details_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="details_product_name"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/details_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="details_product_name"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/details_decrease_quantity"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/details_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="details_product_name"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/details_increase_quantity"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/details_supplier_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="details_product_name"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/details_supplier_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="details_product_name"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/details_call_supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call supplier"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+</LinearLayout>
